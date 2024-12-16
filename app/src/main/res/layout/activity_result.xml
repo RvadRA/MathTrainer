@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/soft_background">
+
+    <!-- Game Over Text -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Игра окончена!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Statistics Text -->
+    <TextView
+        android:id="@+id/statsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статистика"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:textColor="@color/secondary_text"
+        android:layout_marginBottom="36dp" />
+
+    <!-- Restart Game Button -->
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать заново"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/restart_button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="4dp" />
+
+    <!-- Exit Game Button -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти из игры"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/exit_button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="4dp" />
+</LinearLayout>

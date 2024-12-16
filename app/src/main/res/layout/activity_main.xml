@@ -1,0 +1,154 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/soft_background">
+
+    <!-- Уровень -->
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уровень: 1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Статистика -->
+    <TextView
+        android:id="@+id/statsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Правильных: 0 | Ошибок: 0"
+        android:textSize="26sp"
+        android:textColor="@color/secondary_text"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Таймер -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время: 15с"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/alert_color"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Контейнеры для фруктов -->
+    <LinearLayout
+        android:id="@+id/fruitContainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/fruitContainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Вопрос -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сколько всего фруктов?"
+        android:textSize="26sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Варианты ответов -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="26dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="26dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="26dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <!-- Кнопки Да/Нет -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ДА"
+            android:backgroundTint="@color/yes_button_color"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="НЕТ"
+            android:backgroundTint="@color/no_button_color"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Обратная связь -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/success_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

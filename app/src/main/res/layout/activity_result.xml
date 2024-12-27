@@ -6,7 +6,23 @@
     android:gravity="center"
     android:padding="24dp"
     android:background="@color/soft_background">
+    <!-- High Scores -->
+    <TextView
+        android:id="@+id/highScoresText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uploading high scores..."
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textColor="@color/primary_color" />
 
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" /> <!-- Initially visible -->
     <!-- Game Over Text -->
     <TextView
         android:id="@+id/resultText"
@@ -57,4 +73,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:backgroundTint="@color/exit_button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>

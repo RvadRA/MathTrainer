@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "791160012551",
+    "project_id": "mathtrainer-89238",
+    "storage_bucket": "mathtrainer-89238.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791160012551:android:70f2ee291a9d385e2e0fa2",
+        "android_client_info": {
+          "package_name": "com.example.mathtrainer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKzjIMg6Fz1WOLFWk2ByaBTmMKE2KPWuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

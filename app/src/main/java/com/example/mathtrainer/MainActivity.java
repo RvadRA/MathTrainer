@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CountDownTimer timer;
     private long timeLeft = 15000; // 15 seconds for each level
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

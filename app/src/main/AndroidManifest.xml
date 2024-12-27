@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MathTrainer"
         tools:targetApi="31">
-        <!-- Стартовый экран -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
         <activity
             android:name=".StartActivity"
             android:exported="true">
@@ -20,20 +28,17 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Стартовый экран -->
 
-        <!-- Основной игровой экран -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MathTrainer" />
+            android:theme="@style/Theme.MathTrainer" /> <!-- Основной игровой экран -->
 
-        <!-- Экран результатов -->
         <activity
             android:name=".ResultActivity"
             android:exported="true"
             android:theme="@style/Theme.MathTrainer" />
-
     </application>
 
 </manifest>
